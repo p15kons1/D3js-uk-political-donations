@@ -31,6 +31,14 @@
     })();
     </script>
 </head>
+    
+    <!-- Adding the sound to be heard when a sorting button is clicked --> 
+		34.	    <script>
+		35.	var beep = new Audio();
+		36.	beep.src = 'buttonsound.mp3';
+		37.	</script>
+    
+    
 <!-- Add feature detection and noscript -->
 
 <body>
@@ -40,13 +48,13 @@
     </header>
     <nav role="navigation">
         <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+            <li><a href="#" onmousedown="beep.play()" role="button" class="pure-button switch" id="all-donations">All money</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
+            <li><a href="#" onmousedown="beep.play()" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
+            <li><a href="#" onmousedown="beep.play()" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
+            <li><a href="#" onmousedown="beep.play()" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
             </li>
         </ul>
     </nav>
